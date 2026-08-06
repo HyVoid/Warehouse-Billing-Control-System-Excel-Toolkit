@@ -3,7 +3,7 @@ import { SystemParameters, RawOperation, InvoiceState, AppState } from './types'
 import { loadAppState, saveAppState, exportBackupJSON, getFormattedNow } from './utils/storage';
 import { DEFAULT_PARAMETERS, DEFAULT_OPERATIONS } from './data/defaults';
 import { computeAllOperations } from './utils/engine';
-import { Header } from './components/Header';
+import { Sidebar } from './components/Sidebar';
 import { Footer } from './components/Footer';
 import { TabSettings } from './components/TabSettings';
 import { TabOperations } from './components/TabOperations';
@@ -77,9 +77,9 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F5F5F2] text-[#1A1A2E] font-body selection:bg-[#2251FF] selection:text-white">
-      {/* Sticky Top Header */}
-      <Header
+    <div className="min-h-screen flex flex-col lg:flex-row bg-[#F5F5F2] text-[#1A1A2E] font-body selection:bg-[#2251FF] selection:text-white">
+      {/* Left Sidebar Navigation */}
+      <Sidebar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
         lastSaved={lastSaved}
@@ -89,39 +89,64 @@ export default function App() {
         onResetData={() => setIsResetConfirmOpen(true)}
       />
 
-      {/* Main Container - max-w 1400px centered, 40px left/right padding */}
-      <main className="flex-1 max-w-[1400px] w-full mx-auto px-6 sm:px-10 py-8">
-        {activeTab === '00_settings' && (
-          <TabSettings
-            parameters={parameters}
-            onUpdateParameters={setParameters}
-          />
-        )}
+      {/* Main Layout Area */}
+      <div className="flex-1 flex flex-col min-w-0 lg:pl-72">
+        {/* Desktop Top Worksheet Status Bar */}
+        <header className="hidden lg:flex h-14 bg-white border-b border-[#E8E8E6] px-8 items-center justify-between no-print sticky top-0 z-20 shadow-xs">
+          <div className="flex items-center gap-3">
+            <span className="text-xs font-semibold text-[#888888] uppercase tracking-wider">
+              Current Worksheet:
+            </span>
+            <span className="font-heading text-sm font-bold text-[#051C2C]">
+              {activeTab === '00_settings' && '00_System Settings (Parameters & Tiers)'}
+              {activeTab === '01_operations' && '01_Operations Log (Log & Calculation Engine)'}
+              {activeTab === '02_summary' && '02_Bi-weekly Summary (Revenue 看板)'}
+              {activeTab === '03_invoice' && '03_Printable Invoice (Single-Page Invoice)'}
+            </span>
+          </div>
 
-        {activeTab === '01_operations' && (
-          <TabOperations
-            operations={operations}
-            parameters={parameters}
-            onUpdateOperations={setOperations}
-          />
-        )}
+          <div className="flex items-center gap-3 text-xs">
+            <span className="px-2.5 py-1 rounded-full bg-[#F5F5F2] text-[#888888] font-medium border border-[#E8E8E6] flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-[#00C853] animate-pulse" />
+              Auto-save Synced
+            </span>
+          </div>
+        </header>
 
-        {activeTab === '02_summary' && (
-          <TabSummary computedOperations={computedOps} />
-        )}
+        {/* Main Workspace View */}
+        <main className="flex-1 max-w-[1400px] w-full mx-auto px-4 sm:px-8 py-8">
+          {activeTab === '00_settings' && (
+            <TabSettings
+              parameters={parameters}
+              onUpdateParameters={setParameters}
+            />
+          )}
 
-        {activeTab === '03_invoice' && (
-          <TabInvoice
-            operations={operations}
-            parameters={parameters}
-            invoiceState={invoiceState}
-            onUpdateInvoiceState={setInvoiceState}
-          />
-        )}
-      </main>
+          {activeTab === '01_operations' && (
+            <TabOperations
+              operations={operations}
+              parameters={parameters}
+              onUpdateOperations={setOperations}
+            />
+          )}
 
-      {/* Footer */}
-      <Footer />
+          {activeTab === '02_summary' && (
+            <TabSummary computedOperations={computedOps} />
+          )}
+
+          {activeTab === '03_invoice' && (
+            <TabInvoice
+              operations={operations}
+              parameters={parameters}
+              invoiceState={invoiceState}
+              onUpdateInvoiceState={setInvoiceState}
+            />
+          )}
+        </main>
+
+        {/* Footer */}
+        <Footer />
+      </div>
 
       {/* Bulk CSV Modal */}
       <BulkCSVModal
@@ -167,3 +192,4 @@ export default function App() {
     </div>
   );
 }
+
