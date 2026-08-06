@@ -6,6 +6,10 @@
 
 > **Record warehouse activity once, calculate charges consistently, group them into biweekly billing periods, and produce a customer-ready billing statement — without rebuilding the same spreadsheet every billing cycle.**
 
+Browser version 👉 [here](https://hyvoid.github.io/Warehouse-Billing-Control-System-Excel-Toolkit/)
+
+Excel Version 👉 [purchase link](https://alexhasgreatestuff.gumroad.com/l/liwdi)
+
 ---
 
 ## Navigation
