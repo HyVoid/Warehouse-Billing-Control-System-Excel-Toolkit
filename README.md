@@ -8,7 +8,7 @@
 
 Browser version 👉 [here](https://hyvoid.github.io/Warehouse-Billing-Control-System-Excel-Toolkit/)
 
-Excel Version 👉 [purchase link](https://alexhasgreatestuff.gumroad.com/l/liwdi?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=warehouse-billing-control)
+Excel Version 👉 [purchase link](https://www.theseusworkshop.com/l/liwdi?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=warehouse-billing-control)
 
 ---
 
