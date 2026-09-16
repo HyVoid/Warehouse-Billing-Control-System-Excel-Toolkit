@@ -1,156 +1,89 @@
-# 📦 Warehouse Billing Control System
-
-### Excel Toolkit for Storage, Handling, Transport & Biweekly Billing
+# 📦 Warehouse Billing Management Excel Template & 3PL Invoicing System
 
 [![Excel](https://img.shields.io/badge/Microsoft%20Excel-365%20%7C%202021%2B-217346?style=flat-square\&logo=microsoft-excel\&logoColor=white)](#requirements) [![No VBA](https://img.shields.io/badge/VBA-None-2251FF?style=flat-square)](#why-this-tool-exists) [![License](https://img.shields.io/badge/License-Apache%202.0-lightgrey?style=flat-square)](#license)
 
-> **Record warehouse activity once, calculate charges consistently, group them into biweekly billing periods, and produce a customer-ready billing statement — without rebuilding the same spreadsheet every billing cycle.**
+An automated **warehouse billing Excel template** and **3PL logistics invoicing tracker** designed to seamlessly calculate storage fees, handling labor hours, and freight transport charges. Replace manual, error-prone spreadsheets with a unified system that instantly groups daily operational records into biweekly billing cycles and generates customer-ready invoices—without the overhead of complex Warehouse Management Systems (WMS).
 
-Browser version 👉 [here](https://hyvoid.github.io/Warehouse-Billing-Control-System-Excel-Toolkit/)
-
-Excel Version 👉 [purchase link](https://www.theseusworkshop.com/l/liwdi?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=warehouse-billing-control)
-
----
-
-## Navigation
-
-* [What Decision Does This Help You Make?](#what-decision-does-this-help-you-make)
-* [About The Toolkit](#about-the-toolkit)
-* [Who This Is For](#who-this-is-for)
-* [Why Most Billing Errors Aren't Calculation Errors](#why-most-billing-errors-arent-calculation-errors)
-* [Three Traps This Toolkit Is Designed To Avoid](#three-traps-this-toolkit-is-designed-to-avoid)
-* [How It Works](#how-it-works)
-* [Core Workflow](#core-workflow)
-* [Design Principles](#design-principles)
-* [Requirements](#requirements)
-* [Typical Operating Cycle](#typical-operating-cycle)
-* [Limitations](#limitations)
-* [About The Builder](#about-the-builder)
-* [License](#license)
+> 🌐 **Live Web Application**  
+> [Launch Free Web-Based Warehouse Billing Calculator (No Installation)](https://hyvoid.github.io/Warehouse-Billing-Control-System-Excel-Toolkit/)
+>
+> 📥 **Downloadable Excel File**  
+> [Download the Reusable Warehouse Billing Excel Template (.xlsx)](https://www.theseusworkshop.com/l/liwdi?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=warehouse-billing-control)
 
 ---
 
-## What Decision Does This Help You Make?
+## Core Operational Pain Points & Built-In Billing Solutions
 
-**How much should each customer be billed for warehouse activity during a specific billing period — and can you trace that amount back to the underlying operational records?**
+This toolkit maps common fulfillment center and 3PL billing bottlenecks directly to automated spreadsheet calculations, ensuring that every charged dollar traces back to a verified operational fact.
 
-Warehouse billing often combines several different charging rules:
-
-* storage based on days in storage and billed pallet capacity
-* handling based on actual working hours with a minimum billable threshold
-* transportation based on pallet quantity and transport activation
-* customer-specific activity grouped into fixed billing periods
-
-The difficulty is rarely adding three numbers together.
-
-The difficult part is keeping the **operational facts, pricing assumptions, billing period, calculation logic, and final customer statement connected**.
-
-This toolkit provides that workflow in one Excel workbook.
+| Operational Bottleneck / Pain Point | Built-In Automated Solution | Operational Impact & LSI Target |
+| :--- | :--- | :--- |
+| **Complex Multi-Variable Pricing** | **Dynamic Rate Card Engine** | Automatically cross-references storage days, billable pallet capacity tiers, and minimum handling thresholds to generate accurate **3PL handling charges**. |
+| **Disconnected Billing Periods** | **Biweekly Cycle Aggregator** | Groups disparate inbound/outbound receiving logs into fixed biweekly or monthly **logistics invoicing cycles** automatically. |
+| **Phantom Pallet Discrepancies** | **Pallet Space Tier Calculator** | Converts physical pallet quantities into billed tier spaces (e.g., 12 physical = 20 billed) to capture true **warehouse storage fee** revenue. |
+| **Missing Operational Triggers** | **Data Health Validation layer** | Flags missing dispatch dates or undefined transport markers before they cause **freight billing errors** or lost revenue. |
 
 ---
 
-## About The Toolkit
+## Target Audience & Real-World Logistics Use Cases
 
-**Warehouse Billing Control System** is a lightweight Excel-based operational billing framework designed for warehouse operators, fulfillment businesses, logistics teams, and finance staff who need a repeatable way to calculate and review warehouse charges.
+Designed specifically for logistics professionals who need a reliable, transparent, and flexible **warehouse billing spreadsheet** without investing in enterprise software.
 
-The workflow is deliberately narrow:
+### 1. 3PL & Fulfillment Center Operators
+* **Primary Search Intent:** *3PL billing software Excel alternative*
+* **Operational Scenario:** Managing multiple client accounts where daily inbound receiving, order picking, and pallet storage must be accurately tracked and billed on a biweekly schedule.
 
-**Settings → Operations → Calculation → Biweekly Summary → Customer Billing Statement**
+### 2. Warehouse Operations Managers
+* **Primary Search Intent:** *Warehouse handling and storage fee calculator*
+* **Operational Scenario:** Transitioning from unstructured daily logs to a standardized workflow that proves to clients exactly how many labor hours and pallet spaces were utilized.
 
-You enter warehouse activity once. The workbook derives the billing calculations, assigns the activity to a biweekly period, aggregates charges by customer, and provides a single-page billing view for printing or PDF export.
+### 3. Logistics Finance & Invoicing Teams
+* **Primary Search Intent:** *Freight and storage invoice template Excel*
+* **Operational Scenario:** Eliminating the end-of-month manual reconciliation panic by relying on a single source of truth that separates "no billing data" from actual "spreadsheet errors."
 
-The system contains four connected working areas:
-
-1. **System Settings & Assumptions**
-   Maintain rates, billing tiers, minimum work hours, transport charges, cycle length, and cycle anchor date.
-
-2. **Warehouse Operations & Billing Engine**
-   The single source of truth for operational records and calculated charges.
-
-3. **Biweekly Billing Summary**
-   Review customer-level billing totals by billing period.
-
-4. **Single-Page Billing Statement**
-   Select a customer and period, verify billing health, and generate a customer-facing statement.
-
-The design uses modern Excel dynamic-array functions so calculated areas can expand as operational records grow, without manually extending formulas row by row.
+### 4. Independent Storage Facility Owners
+* **Primary Search Intent:** *Pallet storage tracking spreadsheet*
+* **Operational Scenario:** Charging clients based strictly on inventory footprint and duration, requiring an automated way to track days-in-storage against dynamic minimum thresholds.
 
 ---
 
-## Who This Is For
+## Warehouse Billing Comparison: Manual Tracking vs. Automated Toolkit
 
-This toolkit is designed for businesses that already know their warehouse charging rules and want a practical operating workbook rather than a new software implementation.
+Avoid the three most common traps in warehouse invoicing by upgrading your operational workflow.
 
-It is a good fit for:
-
-* Warehouse operators
-* 3PL and fulfillment businesses
-* Storage businesses
-* Small logistics operations
-* Warehouse finance teams
-* Operations managers responsible for customer billing
-* Businesses billing storage, handling, and transport as separate service components
-
-It is especially useful when the current process looks like:
-
-**Operational spreadsheet → manual calculations → manual customer grouping → manual invoice preparation**
-
-and you want to turn that into one repeatable workflow.
+| Billing Workflow Area | Traditional Manual Spreadsheet | Automated Billing Toolkit (This Repo) |
+| :--- | :--- | :--- |
+| **Rate Card & Logic Updates** | **Rebuilding Logic Every Cycle:** Formulas must be manually copied, pasted, and updated across multiple tabs every month. | **Centralized Parameter Controls:** Change storage rates or transport fees once in the Settings layer; all historical and future invoices update automatically. |
+| **Pallet Storage Calculations** | **Flat Unit Counting:** Treats every pallet as a simple 1:1 unit, missing revenue from tiered storage space agreements. | **Configurable Billing Tiers:** Automatically applies tier-based rounding (e.g., charging for a 10-pallet block) based on client contracts. |
+| **Invoice Error Diagnostics** | **Blind Troubleshooting:** A blank invoice could mean a broken VLOOKUP, a missing customer, or zero monthly activity. | **Explicit Invoice Health Status:** Diagnostic indicators explicitly state if data is missing, mismatched, or simply inactive for the period. |
 
 ---
 
-## Why Most Billing Errors Aren't Calculation Errors
+## Quick Start Tutorial: 4-Step Billing Workflow
 
-A billing workbook can contain perfectly correct formulas and still produce a wrong invoice.
+Stop copying and pasting formulas. Follow this operational sequence to establish a repeatable billing cycle:
 
-The problem is usually upstream.
+### Step 1: Configure Your Warehouse Rate Cards
+Open the **System Settings & Assumptions** tab to define your core logistics parameters:
+* Set your cycle anchor date (Biweekly or Monthly).
+* Define daily storage rates, handling hourly rates, and transport activation fees.
+* Set minimum billable work hours and pallet billing tiers.
 
-A missing receiving date can invalidate storage calculations. An incorrect dispatch date can create an impossible storage period. A transport flag entered inconsistently can prevent transport charges from being triggered. A customer name mismatch can make a valid billing period appear empty.
+### Step 2: Log Daily Warehouse Operations
+Input everyday activity into the **Warehouse Operations & Billing Engine**:
+* Paste receiving dates, dispatch dates, physical pallet counts, and actual handling hours.
+* The system automatically flags missing data and calculates the prorated storage duration and handling totals in real-time.
 
-That is why this toolkit does not treat calculation as the entire problem.
+### Step 3: Audit Biweekly Billing Summaries
+Switch to the **Biweekly Billing Summary** dashboard:
+* Review aggregated storage, handling, and transport totals grouped by customer account.
+* Verify the Data Health checks to ensure no missing operational variables are skewing the revenue.
 
-The operational log includes **Data Health** checks at the point where data enters the system. The final billing view includes **Invoice Health** checks before a statement is produced.
+### Step 4: Generate Customer Statements & Secure Your Data
+Select a specific client and billing period to generate a clean, exportable **Single-Page Billing Statement**. 
 
-The objective is simple:
-
-> **Don't just calculate the number. Make it easier to identify whether the number is based on valid operational data.**
-
----
-
-## Three Traps This Toolkit Is Designed To Avoid
-
-### 1. Rebuilding the Same Billing Logic Every Cycle
-
-If storage, handling, and transport rules are calculated manually every two weeks, the process becomes dependent on whoever remembers the correct formulas.
-
-Here, the business rules live in the settings layer and are reused across the workbook.
-
-Change the configured rate once, and downstream calculations reference the updated assumption.
-
----
-
-### 2. Treating Every Pallet as a Simple Unit
-
-Storage billing is not always equal to actual pallet quantity.
-
-This workbook supports a configurable pallet billing tier. With a 10-pallet tier, for example, 12 physical pallets become 20 billed pallet spaces.
-
-That distinction is built into the calculation workflow instead of being left to manual judgment.
-
----
-
-### 3. Confusing "No Billing Data" With "Broken Spreadsheet"
-
-A blank invoice does not necessarily mean the workbook is broken.
-
-It could mean:
-
-* no customer was selected
-* no billing period was selected
-* the customer does not exist in the operational data
-* the customer had no activity during the selected period
-
-The **Invoice Health** status explicitly distinguishes these situations so that an empty result can be investigated before an invoice is issued.
+👉 **Ready to standardize your warehouse invoicing?**  
+Test your rates in the free browser version, then [Download the Reusable Warehouse Billing Excel Template](https://www.theseusworkshop.com/l/liwdi?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=warehouse-billing-control) to deploy a secure, offline, and lifetime-accessible billing framework for your business.
 
 ---
 
