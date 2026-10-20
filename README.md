@@ -79,6 +79,8 @@ Input your everyday fulfillment activity into the **Warehouse Operations & Billi
 - *Feature Check:* The system will automatically flag missing data and calculate the prorated storage duration and handling totals in real-time.
 
 ### Step 3: Audit Biweekly Billing Summaries (Reconciliation)
+<img width="1920" height="790" alt="image" src="https://github.com/user-attachments/assets/3bb40b05-5f3c-4e7d-8dd6-7be3fbee401c" />
+
 Switch to the **Biweekly Billing Summary** dashboard before the end of the month:
 - Review aggregated inventory storage, material handling, and freight transport totals grouped by customer account.
 - Verify the *Data Health Checks* to ensure no missing operational variables (like an empty dispatch date) are skewing your logistics revenue.
@@ -103,108 +105,6 @@ A spreadsheet becomes a true business asset when it does more than store informa
 
 ---
 
-## How It Works
-
-### 01 — Configure Your Billing Rules
-
-The settings layer centralizes the assumptions used throughout the workbook.
-
-Supported parameters include:
-
-* Storage Daily Rate
-* Storage Billing Tier
-* Hourly Work Rate
-* Minimum Work Hours
-* Transport Base Fee
-* Additional Pallet Fee
-* Billing Cycle Days
-* Cycle Base Date
-
-This creates one place to maintain the commercial rules instead of embedding rates throughout multiple worksheets.
-
----
-
-### 02 — Record Warehouse Activity Once
-
-The operational sheet is the workbook's **Single Source of Truth**.
-
-Each record captures:
-
-* Tracking Code
-* Client Name
-* Item Description
-* Date Received
-* Date Dispatched
-* Pallet Quantity
-* Work Hours
-* Transport Flag
-
-The workbook then derives:
-
-* Storage Days
-* Billed Pallet Spaces
-* Storage Cost
-* Billed Work Hours
-* Handling Cost
-* Transport Cost
-* Total Charges
-* Billing Period
-* Data Health
-
-The important design choice is that operational facts are entered once. Downstream billing views reference this source instead of requiring duplicate entry.
-
----
-
-### 03 — Let the Workbook Apply the Charging Rules
-
-The calculation layer handles the defined billing logic consistently.
-<img width="1920" height="790" alt="image" src="https://github.com/user-attachments/assets/3bb40b05-5f3c-4e7d-8dd6-7be3fbee401c" />
-
-
-For example:
-
-* Storage days continue dynamically for inventory still in storage.
-* Dispatched inventory stops accumulating storage days once the dispatch date is entered.
-* Pallet quantities are converted into billable pallet spaces according to the configured tier.
-* Positive work hours are subject to the configured minimum billable threshold.
-* Transport charges apply only when transport is marked as active.
-* Total charges combine storage, handling, and transport components.
-
-These calculations are based on the supplied business rules rather than generic warehouse assumptions.
-
----
-
-### 04 — Review Billing by Customer + Biweekly Period
-
-The summary layer automatically identifies unique combinations of:
-
-**Billing Period + Client Name**
-
-For each combination, it provides:
-
-* Total Tasks Count
-* Storage Revenue
-* Handling Revenue
-* Transport Revenue
-* Total Revenue
-
-This gives finance or management a compact view of what each customer should be billed during each billing cycle.
-
----
-
-### 05 — Generate the Customer Statement
-
-Select:
-
-**Customer → Billing Period**
-
-The single-page billing view then pulls the corresponding billing information and operational line items.
-
-Before printing, **Invoice Health** checks whether the selected combination is valid.
-
-The statement is designed for **landscape, single-page printing or PDF export**, making it suitable for sending to customers as a billing document.
-
----
 
 ## Core Workflow
 
