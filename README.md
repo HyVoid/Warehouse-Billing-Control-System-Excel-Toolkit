@@ -9,7 +9,7 @@
 Looking for a reliable **warehouse billing Excel template**? This automated **3PL logistics invoicing tracker** and **fulfillment center management spreadsheet** is designed to seamlessly calculate **warehouse storage fees**, **pick and pack labor hours**, and **freight transport charges**. Replace manual, error-prone data entry with a unified **warehouse management Excel system** that instantly groups daily operational records into biweekly billing cycles and generates customer-ready invoices—without the massive overhead of a complex enterprise Warehouse Management System (WMS).
 
 > 🌐 **Live Web Application (Test the Engine)**  
-> [Launch Free Web-Based 3PL Warehouse Billing Calculator App (No Installation Required)](https://hyvoid.github.io/Warehouse-Billing-Control-System-Excel-Toolkit/)
+> [Launch Free Web-Based 3PL Warehouse Billing Calculator App (No Installation Required)](https://hyvoid.github.io/warehouse-billing-excel-template/)
 >
 > 📥 **Downloadable Excel File (Keep Your Data Secure)**  
 > [Download the Reusable Warehouse Billing & 3PL Invoicing Excel Template (.xlsx)](https://www.theseusworkshop.com/l/liwdi?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=warehouse-billing-control)
