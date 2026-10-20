@@ -1,196 +1,112 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
-# 📦 Excel-Vorlage für Lagerabrechnung & 3PL-Rechnungsstellung
+# 📦 Warehouse Billing Excel-Vorlage & 3PL-Fakturierungssystem Spreadsheet
+<img width="1402" height="790" alt="image" src="https://github.com/user-attachments/assets/b73edba8-2477-4a96-8b3b-579af1c883c1" />
 
-[![Excel](https://img.shields.io/badge/Microsoft%20Excel-365%20%7C%202021%2B-217346?style=flat-square\&logo=microsoft-excel\&logoColor=white)](#requirements) [![No VBA](https://img.shields.io/badge/VBA-None-2251FF?style=flat-square)](#why-this-tool-exists) [![License](https://img.shields.io/badge/License-Apache%202.0-lightgrey?style=flat-square)](#license)
 
-Eine automatisierte **Excel-Vorlage für Lagerabrechnung** und ein **Tracker für 3PL-Logistikrechnungsstellung**, konzipiert zur nahtlosen Berechnung von Lagergebühren, Handling-Arbeitsstunden und Frachtkosten. Ersetze manuelle, fehleranfällige Tabellenkalkulationen durch ein einheitliches System, das tägliche Betriebsdatensätze sofort in zweiwöchentliche Abrechnungszyklen gruppiert und kundenfertige Rechnungen generiert — ohne den Overhead komplexer Lagerverwaltungssysteme (WMS).
+[![Excel](https://img.shields.io/badge/Microsoft%20Excel-365%20%7C%202021%2B-217346?style=flat-square\&logo=microsoft-excel\&logoColor=white)](#anforderungen) [![No VBA](https://img.shields.io/badge/VBA-None-2251FF?style=flat-square)](#warum-dieses-tool-existiert) [![License](https://img.shields.io/badge/License-Apache%202.0-lightgrey?style=flat-square)](#lizenz)
 
-> 🌐 **Live-Webanwendung**  
-> [Starte den kostenlosen webbasierten Lagerabrechnungs-Rechner (keine Installation)](https://hyvoid.github.io/Warehouse-Billing-Control-System-Excel-Toolkit/)
+Suchen Sie eine zuverlässige **Warehouse Billing Excel-Vorlage**? Dieser automatisierte **3PL-Logistik-Fakturierungstracker** und dieses **Fulfillmentcenter-Management-Spreadsheet** wurden entwickelt, um **Lagergebühren**, **Kommissionier- und Verpackungsstunden** sowie **Frachttransportkosten** nahtlos zu berechnen. Ersetzen Sie die manuelle, fehleranfällige Dateneingabe durch ein einheitliches **Warehouse-Management-Excel-System**, das tägliche Betriebsaufzeichnungen sofort in vierzehntägige Abrechnungszyklen gruppiert und kundenfertige Rechnungen erzeugt – ohne den massiven Overhead eines komplexen unternehmensweiten Warehouse-Management-Systems (WMS).
+
+> 🌐 **Live-Webanwendung (Motor testen)**  
+> [Starten Sie die kostenlose browserbasierte 3PL-Warehouse-Billing-Rechner-App (keine Installation erforderlich)](https://hyvoid.github.io/warehouse-billing-excel-template/)
 >
-> 📥 **Herunterladbare Excel-Datei**  
-> [Lade die wiederverwendbare Excel-Vorlage für Lagerabrechnung herunter (.xlsx)](https://www.theseusworkshop.com/l/liwdi?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=warehouse-billing-control)
+> 📥 **Herunterladbare Excel-Datei (halten Sie Ihre Daten sicher)**  
+> [Laden Sie die wiederverwendbare Warehouse Billing & 3PL-Fakturierungs-Excel-Vorlage (.xlsx) herunter](https://www.theseusworkshop.com/l/liwdi?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=warehouse-billing-control)
 
 ---
 
-## Kernprobleme im Betrieb & eingebaute Abrechnungslösungen
+## Zielgruppen & Fulfillment-Szenarien: Wer braucht dieses Spreadsheet?
 
-Dieses Toolkit bildet häufige Engpässe bei der Abrechnung in Fulfillment-Centern und 3PL direkt auf automatisierte Tabellenkalkulationsberechnungen ab und stellt sicher, dass jede in Rechnung gestellte Geldeinheit auf einen verifizierten Betriebsfakt zurückzuführen ist.
+Dieser Abschnitt ordnet konkrete Logistik-Berufsgruppen den häufigsten operativen Trackingszenarien zu, damit Sie genau die **Logistik-Software-Alternative** finden, nach der Sie suchen.
 
-| Betrieblicher Engpass / Schmerzpunkt | Eingebaute automatisierte Lösung | Betriebliche Auswirkung & LSI-Ziel |
+### 1. 3PL- und Fulfillmentcenter-Betreiber auf der Suche nach Alternativen zu Abrechnungssoftware
+- **Primäre Suchabsicht:** *3PL-Abrechnungssoftware-Excel-Vorlage, Fulfillmentcenter-Preis-Spreadsheet*
+- **Betriebsszenario:** Verwaltung von Multi-Client-Konten, bei denen täglicher Wareneingang, Kommissionierung, Cross-Docking und Palettenlagerung präzise nach strengen vierzehntägigen oder monatlichen Zeitplänen erfasst und abgerechnet werden müssen.
+
+### 2. Lagerbetriebsleiter, die Lagergebührenrechner benötigen
+- **Primäre Suchabsicht:** *Warehouse-Handling- und Lagergebührenrechner, Paletten-Tracking-Spreadsheet*
+- **Betriebsszenario:** Übergang von unstrukturierten Tagesprotokollen zu einem standardisierten Arbeitsablauf, der Kunden exakt nachweist, wie viele Lagerarbeitsstunden und Palettenstellflächen genutzt wurden.
+
+### 3. Logistik-Finanzteams, die Frachtrechnungsvorlagen suchen
+- **Primäre Suchabsicht:** *Fracht- und Lagerrechnungsvorlage Excel, 3PL-Abrechnungsabstimmung*
+- **Betriebsszenario:** Beseitigung der manuellen Monatsabschluss-Panik durch eine einzige Quelle der Wahrheit, die fehlende Wareneingangsdaten klar von tatsächlichen „Tabellenkalkulationsrechenfehlern" trennt.
+
+### 4. Unabhängige Lagerhallenbetreiber
+- **Primäre Suchabsicht:** *Palettenlager-Tracking-Spreadsheet, Lagerhaltungskosten-Rechner*
+- **Betriebsszenario:** Abrechnung mit Kunden strikt nach Lagerflächenbelegung und Dauer, mit automatisierter Erfassung der Lagertage gegen dynamische Mindestflächen-Schwellenwerte.
+
+---
+
+## Zentrale operative Logistik-Schwachstellen & integrierte Excel-Lösungen
+
+Dieses Toolkit fungiert als Brücke zwischen physischen Lagerabläufen und Supply-Chain-Finanzen. Es ordnet typische 3PL-Abrechnungsengpässe direkt automatisierten Spreadsheet-Lösungen zu.
+
+| Operativer Logistik-Engpass (Schmerzpunkt) | Automatisierte Excel-Abrechnungslösung (So lösen wir es) | Geschäftsauswirkung & KPI (Zielkennzahlen) |
 | :--- | :--- | :--- |
-| **Komplexe Preisbildung mit mehreren Variablen** | **Dynamische Tarifkarten-Engine** | Verweist automatisch auf Lagertage, abrechenbare Palettenkapazitätsstufen und Mindest-Handling-Schwellen, um genaue **3PL-Handling-Gebühren** zu generieren. |
-| **Getrennte Abrechnungsperioden** | **Zweiwochenzyklus-Aggregator** | Gruppiert unterschiedliche Eingangs-/Ausgangsprotokolle automatisch in feste zweiwöchentliche oder monatliche **Logistik-Rechnungszyklen**. |
-| **Phantom-Paletten-Abweichungen** | **Palettenplatz-Stufenrechner** | Rechnet physische Palettenmengen in abgerechnete Stufenplätze um (z. B. 12 physische = 20 abgerechnete), um die tatsächlichen Einnahmen aus **Lagergebühren** zu realisieren. |
-| **Fehlende betriebliche Auslöser** | **Validierungsschicht für Data Health** | Markiert fehlende Versanddaten oder undefinierte Transportmarkierungen, bevor sie **Fehler in der Frachtabrechnung** oder Umsatzverluste verursachen. |
+| **Komplexe multivariable Fulfillment-Preisgestaltung** | **Dynamische 3PL-Tarifkarten-Engine:** Kreuzt Lagerungstage, abrechenbare Palettenkapazitätsstufen und Mindest-Kommissionierschwellenwerte. | Genauigkeit bei **3PL-Handlinggebühren** und Verringerung der Leckage nicht abgerechneter Arbeitsleistung. |
+| **Getrennte Abrechnungsperioden & Zyklus-Fehlanpassungen** | **Vierzehntägiger Zyklus-Aggregator:** Gruppiert unterschiedliche Eingangs-/Ausgangs-Logistikprotokolle automatisch in feste monatliche oder vierzehntägige **Abrechnungszyklen**. | Schnelleres **Auftragserfüllungs-Tracking** und geringere Days Sales Outstanding (DSO). |
+| **Phantom-Paletten-Diskrepanzen & Flächenverlust** | **Palettenplatz-Stufenrechner:** Wandelt physische Stückmengen in abgerechnete Stufenplätze um (z. B. 12 physische Paletten = 20 abgerechnete Plätze). | Erfassung echter **Lagergebühren-Umsätze** und Optimierung der Flächenauslastung. |
+| **Fehlende operative Auslöser (Datenlücken)** | **Datenqualitäts-Validierungsschicht:** Markiert fehlende Versanddaten, SKU-Anomalien oder undefinierte Transportmarkierungen, bevor die Rechnung erzeugt wird. | Beseitigung von **Frachtabrechnungsfehlern**, garantiert 100 % Datenkonformität vor der Kundenvorlage. |
 
 ---
 
-## Zielgruppe & praxisnahe Logistik-Anwendungsfälle
+## 3PL-Abrechnungsvergleich: traditionelle Spreadsheets vs. automatisiertes Toolkit
 
-Speziell konzipiert für Logistikprofis, die eine zuverlässige, transparente und flexible **Tabellenkalkulation für Lagerabrechnung** benötigen, ohne in Unternehmenssoftware zu investieren.
+Vermeiden Sie die drei häufigsten Fallen in der Supply-Chain-Fakturierung, indem Sie Ihren Arbeitsablauf mit dieser strukturierten Vorlage modernisieren.
 
-### 1. Betreiber von 3PL & Fulfillment-Centern
-* **Primäre Suchintention:** *Excel-Alternative zu 3PL-Abrechnungssoftware*
-* **Betriebliches Szenario:** Verwaltung mehrerer Kundenkonten, bei denen täglicher Wareneingang, Kommissionierung und Palettenlagerung genau nachverfolgt und zweiwöchentlich abgerechnet werden müssen.
-
-### 2. Betriebsleiter im Lager
-* **Primäre Suchintention:** *Rechner für Lager-Handling und Lagergebühren*
-* **Betriebliches Szenario:** Übergang von unstrukturierten Tagesprotokollen zu einem standardisierten Workflow, der Kunden genau belegt, wie viele Arbeitsstunden und Palettenplätze genutzt wurden.
-
-### 3. Finanz- & Rechnungsstellungsteams in der Logistik
-* **Primäre Suchintention:** *Excel-Vorlage für Fracht- und Lagerrechnungen*
-* **Betriebliches Szenario:** Beseitigung der manuellen Abstimmungspanik zum Monatsende durch Vertrauen auf eine einzige Quelle der Wahrheit, die „keine Abrechnungsdaten" von tatsächlichen „Tabellenkalkulationsfehlern" unterscheidet.
-
-### 4. Inhaber unabhängiger Lagerbetriebe
-* **Primäre Suchintention:** *Tabelle zur Nachverfolgung von Palettenlagerung*
-* **Betriebliches Szenario:** Abrechnung von Kunden strikt nach Bestandsfläche und Dauer, was eine automatisierte Nachverfolgung von Lagertagen gegen dynamische Mindestschwellen erfordert.
-
----
-
-## Vergleich der Lagerabrechnung: Manuelle Nachverfolgung vs. automatisiertes Toolkit
-
-Vermeide die drei häufigsten Fallen bei der Lagerabrechnung, indem du deinen Betriebs-Workflow modernisierst.
-
-| Bereich des Abrechnungs-Workflows | Traditionelle manuelle Tabellenkalkulation | Automatisiertes Abrechnungs-Toolkit (dieses Repository) |
+| Bereich des Logistik-Fakturierungsworkflows | Traditionelles manuelles Spreadsheet-Tracking | Automatisiertes 3PL-Abrechnungs-Toolkit (dieses Repository) |
 | :--- | :--- | :--- |
-| **Aktualisierung von Tarifkarten & Logik** | **Logik jeden Zyklus neu aufbauen:** Formeln müssen jeden Monat manuell über mehrere Registerkarten kopiert, eingefügt und aktualisiert werden. | **Zentrale Parametersteuerung:** Ändere Lagertarife oder Transportgebühren einmal in der Einstellungsebene; alle historischen und zukünftigen Rechnungen aktualisieren sich automatisch. |
-| **Berechnung der Palettenlagerung** | **Flache Einheitenzählung:** Behandelt jede Palette als einfache 1:1-Einheit und verfehlt Einnahmen aus gestaffelten Lagerplatzvereinbarungen. | **Konfigurierbare Abrechnungsstufen:** Wendet automatisch stufenbasierte Rundung an (z. B. Abrechnung eines 10-Paletten-Blocks), basierend auf Kundenverträgen. |
-| **Diagnose von Rechnungsfehlern** | **Blinde Fehlersuche:** Eine leere Rechnung kann einen kaputten SVERWEIS, einen fehlenden Kunden oder keine monatliche Aktivität bedeuten. | **Expliziter Invoice-Health-Status:** Diagnoseindikatoren geben explizit an, ob Daten fehlen, nicht übereinstimmen oder für die Periode einfach inaktiv sind. |
+| **Tarifkarten- & Kundenpreis-Updates** | **Logik bei jedem Zyklus neu aufbauen:** Formeln für Lagerkosten und Frachttarife müssen manuell über mehrere Registerkarten kopiert, eingefügt und geprüft werden. | **Zentralisierte Parametersteuerung:** Ändern Sie Lagertarife oder Palettengebühren einmal in der Einstellungsebene; alle historischen und zukünftigen Logistikrechnungen aktualisieren sich automatisch. |
+| **Berechnungen des Palettenlagerplatzes** | **Flaches Stückzählen:** Behandelt jede Palette als einfache 1:1-Einheit und verschenkt vertragliche Umsätze aus gestaffelten Lagerflächenvereinbarungen. | **Konfigurierbare Abrechnungsstufen:** Wendet stufenbasierte Rundung (z. B. Mindestabrechnung im 10-Paletten-Block) automatisch gemäß den einzelnen SLA-Verträgen an. |
+| **Fehlerdiagnose bei Monatsabschlussrechnungen** | **Blindes Fehlerbeheben:** Eine leere Rechnung kann einen defekten VLOOKUP, eine fehlende Kunden-ID oder schlicht null Lageraktivität bedeuten. | **Expliziter Rechnungs-Gesundheitsstatus:** Das Diagnose-Dashboard zeigt explizit an, ob Supply-Chain-Daten fehlen, nicht übereinstimmen oder inaktiv sind. |
 
 ---
 
-## Schnellstart-Tutorial: Abrechnungs-Workflow in 4 Schritten
+## So automatisieren Sie Ihre 3PL-Fakturierung in 4 Schritten (Kurzanleitung)
 
-Hör auf, Formeln zu kopieren und einzufügen. Befolge diese betriebliche Reihenfolge, um einen wiederholbaren Abrechnungszyklus zu etablieren:
+Hören Sie auf, zerbrechliche Formeln zu kopieren und einzufügen. Folgen Sie dieser betrieblichen Sequenz, um einen zuverlässigen, wiederholbaren Fulfillment-Abrechnungszyklus einzurichten:
 
-### Schritt 1: Konfiguriere deine Lager-Tarifkarten
-Öffne die Registerkarte **System Settings & Assumptions**, um deine Kernparameter für die Logistik zu definieren:
-* Lege dein Zyklus-Ankerdatum fest (zweiwöchentlich oder monatlich).
-* Definiere Tagessätze für Lagerung, Stundensätze für Handling und Transportaktivierungsgebühren.
-* Lege mindestens abrechenbare Arbeitsstunden und Paletten-Tarifstufen fest.
+### Schritt 1: Konfigurieren Sie Ihre Lagertarifkarten (Preiseinrichtung)
+Öffnen Sie die Registerkarte **Systemeinstellungen & Annahmen**, um Ihre Kernlogistik-Parameter zu definieren:
+- Legen Sie Ihr Zyklus-Ankerdatum fest (z. B. vierzehntägige oder monatliche Abrechnung).
+- Definieren Sie tägliche Lagertarife, Kommissionier-Stundensätze und Frachttransport-Aktivierungsgebühren.
+- Legen Sie minimale abrechenbare Lagerarbeitsstunden und Palettenplatz-Abrechnungsstufen fest.
 
-### Schritt 2: Protokolliere den täglichen Lagerbetrieb
-Gib die alltäglichen Aktivitäten in die **Warehouse Operations & Billing Engine** ein:
-* Füge Eingangsdaten, Versanddaten, physische Palettenmengen und tatsächliche Handling-Stunden ein.
-* Das System markiert automatisch fehlende Daten und berechnet die anteilige Lagerdauer und Handling-Summen in Echtzeit.
+### Schritt 2: Tägliche Lagerbetriebsdaten erfassen (Dateneingabe)
+Erfassen Sie Ihre tägliche Fulfillment-Aktivität in der **Warehouse-Betriebs- & Abrechnungs-Engine**:
+- Fügen Sie Wareneingangsdaten, Versanddaten, physische Palettenzählungen und tatsächliche Handling-Arbeitsstunden ein.
+- *Funktionscheck:* Das System markiert fehlende Daten automatisch und berechnet die anteilige Lagerdauer und Handling-Summen in Echtzeit.
 
-### Schritt 3: Prüfe die zweiwöchentlichen Abrechnungsübersichten
-Wechsle zum **Biweekly Billing Summary**-Dashboard:
-* Prüfe die aggregierten Lager-, Handling- und Transportsummen, gruppiert nach Kundenkonto.
-* Verifiziere die Data-Health-Prüfungen, um sicherzustellen, dass keine fehlenden Betriebsvariablen den Umsatz verzerren.
+### Schritt 3: Vierzehntägige Abrechnungszusammenfassungen prüfen (Abstimmung)
+<img width="1920" height="790" alt="image" src="https://github.com/user-attachments/assets/3bb40b05-5f3c-4e7d-8dd6-7be3fbee401c" />
 
-### Schritt 4: Generiere Kundenaufstellungen & sichere deine Daten
-Wähle einen bestimmten Kunden und Abrechnungszeitraum, um eine saubere, exportierbare **Einseitige Abrechnungsaufstellung** zu generieren. 
+Wechseln Sie vor Monatsende zum Dashboard **Vierzehntägige Abrechnungszusammenfassung**:
+- Überprüfen Sie die aggregierten Gesamtsummen für Inventarlagerung, Materialhandling und Frachttransport, gruppiert nach Kundenkonto.
+- Prüfen Sie die *Datenqualitätskontrollen*, um sicherzustellen, dass keine fehlenden Betriebsvariablen (wie ein leeres Versanddatum) Ihre Logistikumsätze verzerren.
 
-👉 **Bereit, deine Lagerabrechnung zu standardisieren?**  
-Teste deine Tarife in der kostenlosen Browser-Version und [lade dann die wiederverwendbare Excel-Vorlage für Lagerabrechnung herunter](https://www.theseusworkshop.com/l/liwdi?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=warehouse-billing-control), um einen sicheren, offline und dauerhaft verfügbaren Abrechnungsrahmen für dein Unternehmen einzusetzen.
+### Schritt 4: Kundenabrechnungen erstellen & Ihr wiederverwendbares Asset sichern
+Wählen Sie einen bestimmten 3PL-Kunden und eine Abrechnungsperiode aus, um sofort eine saubere, exportierbare **einseitige Abrechnung** zu erzeugen.
 
----
-
-## So funktioniert es
-
-### 01 — Konfiguriere deine Abrechnungsregeln
-
-Die Einstellungsebene zentralisiert die in der gesamten Arbeitsmappe verwendeten Annahmen.
-
-Unterstützte Parameter umfassen:
-
-* Lager-Tagessatz
-* Lager-Tarifstufe
-* Arbeitsstundensatz
-* Mindestarbeitsstunden
-* Transport-Grundgebühr
-* Zusätzliche Palettengebühr
-* Tage des Abrechnungszyklus
-* Basisdatum des Zyklus
-
-So gibt es einen Ort, um die Geschäftsregeln zu pflegen, statt Tarife über mehrere Arbeitsblätter zu verteilen.
+👉 **Bereit, Ihre Lagerfakturierung dauerhaft zu standardisieren?**  
+Testen Sie Ihre Preismodelle im kostenlosen Webrechner oben und sehen Sie die Logik in Aktion. Sobald Sie mit dem Workflow zufrieden sind, **[laden Sie hier die wiederverwendbare Warehouse Billing Excel-Vorlage herunter](https://www.theseusworkshop.com/l/liwdi?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=warehouse-billing-control)**, um ein sicheres, offline nutzbares und lebenslang verfügbares Abrechnungsframework für Ihre täglichen Logistikabläufe bereitzustellen.
 
 ---
 
-### 02 — Erfasse Lageraktivitäten nur einmal
+## Die Geschäftslogik & Methodik: So lösen wir die 3PL-Fakturierung
 
-Das Betriebsblatt ist die **Single Source of Truth** der Arbeitsmappe.
+Dieses Toolkit baut auf bewährten Prinzipien des Supply-Chain-Managements auf. Es ist nicht nur eine Sammlung von Formeln, sondern eine strukturierte Methodik zur Lösung realer kommerzieller Logistikprobleme:
 
-Jeder Datensatz erfasst:
+1. **Integration der Prozesskostenrechnung (Activity-Based Costing, ABC):** Statt pauschaler Monatsgebühren nutzt diese Vorlage ABC-Prinzipien. Sie verknüpft direkte Arbeitsleistung (Handling-Stunden) und physische Stellfläche (Palettenlagertage) direkt mit dem konkreten Kunden, der diese Ressourcen nutzt – für präzise Kostendeckung und Margenschutz.
+2. **Entkopplung von Betrieb und Abrechnung:** In vielen Lagern vermischen sich Betriebsprotokolle und Finanzrechnungen, was Daten korrumpiert. Diese Vorlage führt eine strukturelle Entkopplung ein: Lagerpersonal erfasst nur rote betriebliche Fakten (Daten, Paletten, Stunden), während die automatisierte Engine strikt die finanzielle Übersetzung anhand vordefinierter Tarifkarten übernimmt.
+3. **Das Unvorhersehbare standardisieren:** Logistik ist naturgemäß chaotisch – Kunden verschicken Teillaadungen, Sendungen verzögern sich, Lagerungstage schwanken. Durch die Implementierung von „Staffelabrechnung" und „Mindestschwellenwerten" in der Tabelle wandelt das Tool diese unvorhersehbaren physischen Variablen mathematisch in planbare, abrechenbare finanzielle Einheiten um.
 
-* Tracking-Code
-* Kundenname
-* Artikelbeschreibung
-* Eingangsdatum
-* Versanddatum
-* Palettenmenge
-* Arbeitsstunden
-* Transportmarkierung
-
-Die Arbeitsmappe leitet daraus ab:
-
-* Lagertage
-* Abgerechnete Palettenplätze
-* Lagerkosten
-* Abgerechnete Arbeitsstunden
-* Handling-Kosten
-* Transportkosten
-* Gesamtgebühren
-* Abrechnungszeitraum
-* Data Health
-
-Die wichtige Designentscheidung ist, dass Betriebsdaten nur einmal eingegeben werden. Nachgelagerte Abrechnungsansichten verweisen auf diese Quelle, statt doppelte Eingaben zu erfordern.
+Eine Tabelle wird zu einem echten Geschäftswert, wenn sie mehr tut als Informationen speichern – sie muss einen zugrunde liegenden Geschäftsprozess leichter wiederholbar, prüfbar und skalierbar machen.
 
 ---
 
-### 03 — Lass die Arbeitsmappe die Gebührenregeln anwenden
 
-Die Berechnungsebene wendet die definierte Abrechnungslogik konsistent an.
-
-Zum Beispiel:
-
-* Lagertage laufen für Bestände, die noch im Lager sind, dynamisch weiter.
-* Versandter Bestand hört auf, Lagertage zu akkumulieren, sobald das Versanddatum eingegeben wird.
-* Palettenmengen werden gemäß der konfigurierten Stufe in abrechenbare Palettenplätze umgerechnet.
-* Positive Arbeitsstunden unterliegen der konfigurierten Mindestabrechnungsschwelle.
-* Transportgebühren fallen nur an, wenn Transport als aktiv markiert ist.
-* Gesamtgebühren kombinieren Lager-, Handling- und Transportkomponenten.
-
-Diese Berechnungen basieren auf den bereitgestellten Geschäftsregeln und nicht auf generellen Lagerannahmen.
-
----
-
-### 04 — Prüfe die Abrechnung nach Kunde + zweiwöchentlichem Zeitraum
-
-Die Übersichtsebene identifiziert automatisch eindeutige Kombinationen aus:
-
-**Abrechnungszeitraum + Kundenname**
-
-Für jede Kombination stellt sie bereit:
-
-* Gesamtanzahl der Aufgaben
-* Lagerumsatz
-* Handling-Umsatz
-* Transportumsatz
-* Gesamtumsatz
-
-Das gibt der Finanzabteilung oder dem Management eine kompakte Sicht darauf, was jedem Kunden in jedem Abrechnungszyklus in Rechnung gestellt werden sollte.
-
----
-
-### 05 — Generiere die Kundenaufstellung
-
-Wähle:
-
-**Kunde → Abrechnungszeitraum**
-
-Die einseitige Abrechnungsansicht ruft dann die entsprechenden Abrechnungsinformationen und betrieblichen Einzelposten ab.
-
-Vor dem Druck prüft **Invoice Health**, ob die gewählte Kombination gültig ist.
-
-Die Aufstellung ist für **Querformat, einseitigen Druck oder PDF-Export** konzipiert und damit geeignet, als Abrechnungsdokument an Kunden gesendet zu werden.
-
----
-
-## Kern-Workflow
+## Kernworkflow
 
 ```text
 SYSTEM SETTINGS
@@ -212,64 +128,64 @@ Single-Page Billing Statement
 Print / PDF
 ```
 
-Das Ergebnis ist kein allgemeines Lagerverwaltungssystem.
+Das Ergebnis ist kein allgemeines Warehouse-Management-System.
 
-Es ist ein **fokussierter Workflow zur Abrechnungssteuerung**, gebaut um ein wiederkehrendes Geschäftsproblem.
+Es ist ein **fokussierter Abrechnungskontroll-Workflow**, aufgebaut rund um ein wiederkehrendes Geschäftsproblem.
 
 ---
 
-## Design-Prinzipien
+## Designprinzipien
 
 ### Single Source of Truth
 
-Betriebsdaten werden an einem Ort eingegeben. Übersichts- und Abrechnungsansichten leiten ihre Informationen aus dieser Quelle ab.
+Betriebliche Fakten werden an einem Ort erfasst. Zusammenfassungs- und Abrechnungsansichten leiten ihre Informationen aus dieser Quelle ab.
 
-Das reduziert doppelte Eingaben und macht es einfacher, eine Abrechnungssumme auf den zugrunde liegenden Betriebsdatensatz zurückzuverfolgen.
+Das reduziert doppelte Eingaben und macht es einfacher, eine Abrechnungssumme bis zum zugrunde liegenden Betriebsdatensatz zurückzuverfolgen.
 
 ### Parameter an einem Ort
 
-Geschäftsannahmen sind zentralisiert statt über Bereiche verstreut.
+Kommerzielle Annahmen werden zentralisiert statt über die Berechnungsbereiche verstreut.
 
-Das macht Tarifänderungen einfacher zu verwalten und reduziert das Risiko, eine Berechnung zu aktualisieren und eine andere zu vergessen.
+Das erleichtert die Verwaltung von Tarifänderungen und verringert das Risiko, eine Berechnung zu aktualisieren und eine andere zu vergessen.
 
 ### Berechnung + Diagnose
 
-Die Arbeitsmappe trennt **"Was ist die Gebühr?"** von **"Kann ich der Eingabe trauen?"**
+Die Arbeitsmappe trennt **„Wie hoch ist der Betrag?"** von **„Kann ich der Eingabe vertrauen?"**
 
-Data Health adressiert Probleme auf Quell-Datenebene.
+Die Datenqualität adressiert Probleme auf Quellenebene.
 
-Invoice Health adressiert Probleme auf Abrechnungsoutput-Ebene.
+Die Rechnungsqualität adressiert Probleme des Abrechnungs-Outputs.
 
-Dieser zweistufige Ansatz ist besonders nützlich, wenn eine Arbeitsmappe von verschiedenen Personen für Betrieb, Finanzen und Kundenabrechnung genutzt wird.
+Dieser zweistufige Ansatz ist besonders nützlich, wenn verschiedene Personen die Arbeitsmappe für Betrieb, Finanzen und Kundenabrechnung nutzen.
 
-### Wiederverwenden statt Neuaufbauen
+### Wiederverwendung statt Neuaufbau
 
-Sobald die Arbeitsmappe konfiguriert ist, besteht der wiederkehrende Prozess primär aus:
+Sobald die Arbeitsmappe konfiguriert ist, ist der wiederkehrende Prozess im Wesentlichen:
 
-**eingeben → prüfen → zusammenfassen → abrechnen**
+**erfassen → prüfen → zusammenfassen → abrechnen**
 
-Derselbe Rahmen kann über Abrechnungszyklen hinweg wiederverwendet werden, statt jedes Mal ein neues Berechnungsblatt aufzubauen.
+Dasselbe Framework kann über Abrechnungszyklen hinweg wiederverwendet werden, statt jedes Mal ein neues Berechnungsblatt aufzubauen.
 
 ---
 
 ## Anforderungen
 
-Diese Arbeitsmappe setzt auf moderne dynamische Array-Funktionalität von Excel.
+Diese Arbeitsmappe basiert auf der modernen Dynamic-Array-Funktionalität von Excel.
 
 **Erforderlich:**
 
 * Microsoft 365, oder
 * Excel 2021 oder neuer
-* Dynamische-Array-Funktionen einschließlich `MAP`, `LAMBDA`, `UNIQUE` und `FILTER`
+* Dynamic-Array-Funktionen einschließlich `MAP`, `LAMBDA`, `UNIQUE` und `FILTER`
 
-**Nicht ausgelegt für:**
+**Nicht geeignet für:**
 
 * Excel 2016
 * Excel 2013
 * ältere Excel-Versionen ohne die erforderliche Dynamic-Array-Engine
-* Drittanbieter-Tabellenkalkulationssoftware ohne gleichwertige Funktionsunterstützung
+* Spreadsheet-Software Drittanbieter ohne äquivalente Funktionsunterstützung
 
-Die Implementierung erfordert außerdem **kein VBA**.
+Die Implementierung benötigt außerdem **kein VBA**.
 
 ---
 
@@ -277,100 +193,86 @@ Die Implementierung erfordert außerdem **kein VBA**.
 
 ### Ersteinrichtung
 
-1. Öffne die Arbeitsmappe.
-2. Prüfe die Systemeinstellungen.
-3. Gib die geltenden Annahmen für Lagerung, Arbeit, Transport und Abrechnungszyklus ein.
+1. Öffnen Sie die Arbeitsmappe.
+2. Prüfen Sie die Systemeinstellungen.
+3. Erfassen Sie die geltenden Annahmen zu Lagerung, Arbeit, Transport und Abrechnungszyklus.
 
-### Täglicher Betrieb
+### Tägliche Abläufe
 
-1. Füge neue Lageraktivitäten zum Betriebsprotokoll hinzu.
-2. Gib Eingangs- und Versandinformationen ein.
-3. Erfasse Palettenmenge, Arbeitsstunden und Transportstatus.
-4. Prüfe **Data Health** auf Ausnahmen.
+1. Fügen Sie neue Lageraktivität dem Betriebsprotokoll hinzu.
+2. Erfassen Sie Wareneingangs- und Versandinformationen.
+3. Notieren Sie Palettenanzahl, Arbeitsstunden und Transportstatus.
+4. Prüfen Sie die **Datenqualität** auf Ausnahmen.
 
-### Zweiwöchentliche Abrechnung
+### Vierzehntägige Abrechnung
 
-1. Öffne die Abrechnungsübersicht.
-2. Prüfe die Kunden-Zeitraum-Summen.
-3. Wähle den Kunden in der Abrechnungsaufstellung.
-4. Wähle den entsprechenden Abrechnungszeitraum.
-5. Bestätige, dass **Invoice Health** einen gültigen Abrechnungsstatus anzeigt.
-6. Prüfe die Einzelposten.
-7. Drucke die Aufstellung oder exportiere sie als PDF.
+1. Öffnen Sie die Abrechnungszusammenfassung.
+2. Prüfen Sie die Kunden-Perioden-Summen.
+3. Wählen Sie den Kunden in der Abrechnung aus.
+4. Wählen Sie die entsprechende Abrechnungsperiode.
+5. Bestätigen Sie, dass die **Rechnungsqualität** einen gültigen Abrechnungszustand zeigt.
+6. Prüfen Sie die Einzelposten.
+7. Drucken Sie die Abrechnung oder exportieren Sie sie als PDF.
 
-Die beabsichtigte Nutzererfahrung ist einfach:
+Das angestrebte Nutzererlebnis ist einfach:
 
-> **Regeln einmal festlegen. Arbeit erfassen. Ergebnis prüfen. Kunden abrechnen.**
+> **Regeln einmal festlegen. Arbeit erfassen. Ergebnis prüfen. Kunde abrechnen.**
 
 ---
 
 ## Wartung
 
-Die Arbeitsmappe ist auf wiederkehrende Nutzung mit geringem Wartungsaufwand ausgelegt.
+Die Arbeitsmappe ist auf wartungsarme, wiederkehrende Nutzung ausgelegt.
 
-Der Normalbetrieb sollte umfassen:
+Der normale Betrieb umfasst:
 
-* Aktualisierung der Lageraktivitäten
+* Aktualisierung der Lageraktivität
 * Aktualität der Versanddaten
-* Prüfung von Data-Health-Warnungen
-* Änderung geschäftlicher Annahmen nur, wenn sich die zugrunde liegenden Abrechnungsregeln ändern
-* Prüfung der Kunden-Zeitraum-Summen vor Ausstellung von Aufstellungen
+* Prüfung der Datenqualitätswarnungen
+* Änderung kommerzieller Annahmen nur bei Änderung der zugrunde liegenden Abrechnungsregeln
+* Prüfung der Kunden-Perioden-Summen vor Ausstellung der Abrechnungen
 
-Die Berechnungsbereiche sollten nicht manuell überschrieben werden.
+Die Berechnungsbereiche dürfen nicht manuell überschrieben werden.
 
-Insbesondere muss der Dynamic-Array-Formelbereich im Betriebsblatt frei bleiben, damit Berechnungen automatisch in neue Datensätze überlaufen können.
+Insbesondere der Dynamic-Array-Formelbereich im Betriebsblatt muss frei bleiben, damit Berechnungen automatisch in neue Datensätze überlaufen können.
 
 ---
 
-## Grenzen
+## Einschränkungen
 
-Diese Toolkit ist absichtlich fokussiert.
+Dieses Toolkit ist bewusst fokussiert.
 
-Sie ist **nicht** dazu gedacht, zu ersetzen:
+Es ist **nicht** dafür gedacht, Folgendes zu ersetzen:
 
-* ein vollständiges Lagerverwaltungssystem
-* Bestandsverwaltungssoftware
+* ein vollständiges Warehouse-Management-System
+* Lagerbestandsverwaltungssoftware
 * Buchhaltungssoftware
-* Customer-Relationship-Management-Software
+* CRM-Software
 * Zahlungseinzugssysteme
-* ein allgemeines ERP-System
+* ein allgemeines ERP
 
-Sie berechnet und organisiert Gebühren gemäß den konfigurierten Geschäftsregeln. Sie bestimmt nicht unabhängig, ob diese Geschäftsregeln für einen bestimmten Vertrag angemessen sind.
+Es berechnet und organisiert Gebühren gemäß den konfigurierten Geschäftsregeln. Ob diese kommerziellen Regeln für einen bestimmten Vertrag angemessen sind, entscheidet es nicht selbst.
 
-Für die Performance empfiehlt die Implementierung, eine Arbeitsmappe unter etwa **100.000 Betriebsdatensätzen** zu halten und ältere Daten bei Bedarf jährlich zu archivieren.
-
----
-
-## Über den Entwickler
-
-Dieses Toolkit basiert auf einer einfachen Prämisse:
-
-**Wiederkehrende Betriebsprobleme verdienen wiederverwendbare Workflows.**
-
-Eine Tabellenkalkulation wird deutlich nützlicher, wenn sie mehr tut als Informationen zu speichern. Sie sollte den zugrunde liegenden Geschäftsprozess einfacher zu wiederholen, zu prüfen und zu erklären machen.
-
-Der Fokus hier ist nicht, Excel in Unternehmenssoftware zu verwandeln.
-
-Es geht darum, einen spezifischen Betriebs-Workflow in ein praktisches Tool zu verpacken, das ohne Software-Implementierungsprojekt geöffnet, verstanden und wiederverwendet werden kann.
+Aus Leistungsgründen empfiehlt die Implementierung, die Arbeitsmappe unter etwa **100.000 Betriebszeilen** zu halten und ältere Daten bei Bedarf jährlich zu archivieren.
 
 ---
 
 ## Lizenz
 
-Dieses Projekt wird unter der **Apache License 2.0** veröffentlicht.
+Dieses Projekt wird unter der **Apache-Lizenz 2.0** veröffentlicht.
 
-Siehe die Datei `LICENSE` für den vollständigen Lizenztext.
+Den vollständigen Lizenztext finden Sie in der Datei `LICENSE`.
 
 ---
 
-## Abschließender Hinweis
+## Abschließende Anmerkung
 
-Lagerabrechnung muss nicht zu einem großen Softwareprojekt werden, nur weil mehrere Gebührenregeln beteiligt sind.
+Die Lagerabrechnung muss nicht zu einem großen Softwareprojekt werden, nur weil mehrere Abrechnungsregeln beteiligt sind.
 
-Wenn dein Prozess grundsätzlich ist:
+Wenn Ihr Prozess im Kern ist:
 
-**Lageraktivität → Lager- + Handling- + Transportgebühren → zweiwöchentliche Kundenabrechnung**
+**Lageraktivität → Lager- + Handling- + Transportgebühren → vierzehntägige Kundenabrechnung**
 
 dann kann ein fokussierter Excel-Workflow genügen.
 
-Dieses Toolkit ist darauf ausgelegt, diesen Workflow sichtbar, wiederholbar und prüfbar zu halten — während das Unternehmen in der vertrauten Excel-Umgebung bleibt.
+Dieses Toolkit ist darauf ausgelegt, diesen Workflow sichtbar, wiederholbar und prüfbar zu halten – während das Geschäft in der vertrauten Excel-Umgebung bleibt.
