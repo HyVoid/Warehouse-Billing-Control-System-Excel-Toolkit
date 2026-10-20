@@ -1,196 +1,112 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
-# 📦 Plantilla Excel de Gestión de Facturación de Almacén y Sistema de Facturación 3PL
+# 📦 Plantilla Excel de Facturación de Almacén y Sistema de Facturación 3PL en Hoja de Cálculo
+<img width="1402" height="790" alt="image" src="https://github.com/user-attachments/assets/b73edba8-2477-4a96-8b3b-579af1c883c1" />
 
-[![Excel](https://img.shields.io/badge/Microsoft%20Excel-365%20%7C%202021%2B-217346?style=flat-square\&logo=microsoft-excel\&logoColor=white)](#requirements) [![No VBA](https://img.shields.io/badge/VBA-None-2251FF?style=flat-square)](#why-this-tool-exists) [![License](https://img.shields.io/badge/License-Apache%202.0-lightgrey?style=flat-square)](#license)
 
-Una **plantilla Excel de facturación de almacén** automatizada y un **rastreador de facturación logística 3PL** diseñados para calcular sin fricción las tarifas de almacenamiento, las horas de mano de obra de manipulación y los cargos de transporte de mercancías. Sustituye las hojas de cálculo manuales y propensas a errores por un sistema unificado que agrupa al instante los registros operativos diarios en ciclos de facturación quincenales y genera facturas listas para el cliente, sin la sobrecarga de los complejos Sistemas de Gestión de Almacenes (WMS).
+[![Excel](https://img.shields.io/badge/Microsoft%20Excel-365%20%7C%202021%2B-217346?style=flat-square\&logo=microsoft-excel\&logoColor=white)](#requisitos) [![No VBA](https://img.shields.io/badge/VBA-None-2251FF?style=flat-square)](#por-qué-existe-esta-herramienta) [![License](https://img.shields.io/badge/License-Apache%202.0-lightgrey?style=flat-square)](#licencia)
 
-> 🌐 **Aplicación Web en Vivo**  
-> [Abrir la Calculadora Web Gratuita de Facturación de Almacén (Sin Instalación)](https://hyvoid.github.io/Warehouse-Billing-Control-System-Excel-Toolkit/)
+¿Buscas una **plantilla Excel de facturación de almacén** fiable? Este **rastreador de facturación logística 3PL** automatizado y esta **hoja de cálculo de gestión de centros de fulfillment** están diseñados para calcular sin problemas las **tarifas de almacenamiento en almacén**, las **horas de trabajo de picking y embalaje** y los **cargos de transporte de mercancías**. Sustituye la entrada manual de datos, propensa a errores, por un **sistema Excel de gestión de almacén** unificado que agrupa al instante los registros operativos diarios en ciclos de facturación quincenales y genera facturas listas para el cliente, sin la enorme sobrecarga de un sistema de gestión de almacén (WMS) empresarial complejo.
+
+> 🌐 **Aplicación web en vivo (prueba el motor)**  
+> [Lanza la app gratuita de calculadora de facturación de almacén 3PL en el navegador (sin instalación)](https://hyvoid.github.io/warehouse-billing-excel-template/)
 >
-> 📥 **Archivo Excel Descargable**  
-> [Descargar la Plantilla Excel Reutilizable de Facturación de Almacén (.xlsx)](https://www.theseusworkshop.com/l/liwdi?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=warehouse-billing-control)
+> 📥 **Archivo Excel descargable (mantén tus datos seguros)**  
+> [Descarga la plantilla Excel reutilizable de facturación de almacén y 3PL (.xlsx)](https://www.theseusworkshop.com/l/liwdi?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=warehouse-billing-control)
 
 ---
 
-## Puntos de Dolor Operativos Centrales y Soluciones de Facturación Integradas
+## Usuarios objetivo y escenarios de fulfillment: ¿Quién necesita esta hoja de cálculo?
 
-Este kit asigna los cuellos de botella habituales de los centros de cumplimiento y de la facturación 3PL directamente a cálculos automatizados de hoja de cálculo, garantizando que cada dólar cobrado se remonte a un hecho operativo verificado.
+Esta sección asigna puestos logísticos específicos a sus escenarios de seguimiento operativo más comunes, garantizando que encuentres exactamente la **alternativa de software logístico** que buscas.
 
-| Cuello de Botella Operativo / Punto de Dolor | Solución Automatizada Integrada | Impacto Operativo y Objetivo LSI |
+### 1. Operadores de 3PL y centros de fulfillment que buscan alternativas a software de facturación
+- **Intención de búsqueda principal:** *plantilla Excel de software de facturación 3PL, hoja de cálculo de precios de centro de fulfillment*
+- **Escenario operativo:** Gestionar cuentas multi-cliente donde la recepción diaria de entradas, la selección de pedidos, el cross-docking y el almacenamiento en pallets deben rastrearse y facturarse con precisión en calendarios estrictos quincenales o mensuales.
+
+### 2. Gerentes de operaciones de almacén que necesitan calculadoras de tarifas de almacenamiento
+- **Intención de búsqueda principal:** *calculadora de tarifas de manipulación y almacenamiento en almacén, hoja de cálculo de seguimiento de pallets*
+- **Escenario operativo:** Pasar de registros diarios no estructurados a un flujo de trabajo operativo estandarizado que demuestre a los clientes exactamente cuántas horas de trabajo de almacén y cuántos espacios de huella de pallets se utilizaron.
+
+### 3. Equipos financieros logísticos que buscan plantillas de facturas de flete
+- **Intención de búsqueda principal:** *plantilla Excel de facturas de flete y almacenamiento, conciliación de facturación 3PL*
+- **Escenario operativo:** Eliminar el pánico de la conciliación manual de fin de mes confiando en una única fuente de verdad que separe claramente los «datos de recepción faltantes» de los verdaderos «errores de cálculo de la hoja de cálculo».
+
+### 4. Propietarios independientes de instalaciones de almacenamiento
+- **Intención de búsqueda principal:** *hoja de cálculo de seguimiento de almacenamiento de pallets, calculadora de coste de mantenimiento de inventario*
+- **Escenario operativo:** Cobrar a los clientes estrictamente según la huella de inventario y la duración, requiriendo una forma automatizada de rastrear los días de almacenamiento contra umbrales dinámicos de espacio mínimo.
+
+---
+
+## Puntos de dolor operativos logísticos principales y soluciones Excel integradas
+
+Esta herramienta actúa como puente entre las operaciones físicas del almacén y las finanzas de la cadena de suministro. Asigna los cuellos de botella habituales de facturación 3PL directamente a soluciones automatizadas de hoja de cálculo.
+
+| Cuello de botella operativo logístico (punto de dolor) | Solución de facturación Excel automatizada (cómo lo arreglamos) | Impacto de negocio y KPI (métricas objetivo) |
 | :--- | :--- | :--- |
-| **Precios Complejos con Múltiples Variables** | **Motor Dinámico de Tarifas** | Cruza automáticamente los días de almacenamiento, los tramos de capacidad de palés facturables y los umbrales mínimos de manipulación para generar **cargos de manipulación 3PL** precisos. |
-| **Periodos de Facturación Desconectados** | **Agregador de Ciclos Quincenales** | Agrupa automáticamente registros dispares de recepción y salida en **ciclos de facturación logística** quincenales o mensuales fijos. |
-| **Discrepancias Fantasma de Palés** | **Calculadora de Tramos de Espacio de Palés** | Convierte las cantidades físicas de palés en espacios de tramo facturados (p. ej., 12 físicos = 20 facturados) para captar los ingresos reales por **tarifa de almacenamiento**. |
-| **Disparadores Operativos Faltantes** | **Capa de Validación de Salud de Datos** | Señala fechas de despacho faltantes o marcadores de transporte sin definir antes de que provoquen **errores de facturación de fletes** o pérdida de ingresos. |
+| **Precios de fulfillment multivariable complejos** | **Motor dinámico de tarifas 3PL:** Cruza los días de almacenamiento, los niveles facturables de capacidad de pallets y los umbrales mínimos de picking y embalaje. | Precisión en los **cargos de manipulación 3PL** y reducción de la fuga de trabajo no facturado. |
+| **Periodos de facturación desconectados y desajustes de ciclo** | **Agregador de ciclos quincenales:** Agrupa automáticamente registros dispares de recepción logística de entrada/salida en **ciclos de facturación** fijos mensuales o quincenales. | Seguimiento más rápido del **cumplimiento de pedidos** y reducción de los Días de Ventas Pendientes de Cobro (DSO). |
+| **Discrepancias de pallets fantasma y pérdida de huella** | **Calculadora de niveles de espacio de pallets:** Convierte cantidades físicas de unidades en espacios facturables por nivel (p. ej., 12 pallets físicos = 20 espacios facturados). | Captura de los ingresos reales por **tarifas de almacenamiento en almacén** y optimización de la utilización del espacio. |
+| **Disparadores operativos faltantes (brechas de datos)** | **Capa de validación de salud de datos:** Marca fechas de despacho faltantes, anomalías de SKU o marcadores de transporte sin definir antes de generar la factura. | Eliminación de **errores de facturación de flete**, garantizando el 100% de cumplimiento de datos antes de la presentación al cliente. |
 
 ---
 
-## Público Objetivo y Casos de Uso Logísticos Reales
+## Comparación de facturación 3PL: hojas de cálculo tradicionales vs. herramienta automatizada
 
-Diseñado específicamente para profesionales de la logística que necesitan una **hoja de cálculo de facturación de almacén** fiable, transparente y flexible sin invertir en software empresarial.
+Evita las tres trampas más comunes en la facturación de la cadena de suministro actualizando tu flujo de trabajo operativo con esta plantilla estructurada.
 
-### 1. Operadores de 3PL y Centros de Cumplimiento
-* **Intención de Búsqueda Principal:** *alternativa Excel al software de facturación 3PL*
-* **Escenario Operativo:** Gestionar múltiples cuentas de clientes donde la recepción diaria, el picking de pedidos y el almacenamiento de palés deben registrarse y facturarse con precisión en un calendario quincenal.
-
-### 2. Gerentes de Operaciones de Almacén
-* **Intención de Búsqueda Principal:** *calculadora de tarifas de manipulación y almacenamiento*
-* **Escenario Operativo:** Pasar de registros diarios sin estructura a un flujo de trabajo estandarizado que demuestre a los clientes exactamente cuántas horas de mano de obra y espacios de palé se utilizaron.
-
-### 3. Equipos de Finanzas y Facturación Logística
-* **Intención de Búsqueda Principal:** *plantilla Excel de factura de flete y almacenamiento*
-* **Escenario Operativo:** Eliminar el pánico de la conciliación manual de fin de mes apoyándose en una única fuente de verdad que separa "sin datos de facturación" de los auténticos "errores de hoja de cálculo".
-
-### 4. Propietarios de Instalaciones de Almacenamiento Independientes
-* **Intención de Búsqueda Principal:** *hoja de cálculo de seguimiento de almacenamiento de palés*
-* **Escenario Operativo:** Cobrar a los clientes estrictamente según la huella de inventario y la duración, necesitando una forma automatizada de rastrear los días en almacenamiento frente a umbrales mínimos dinámicos.
-
----
-
-## Comparación de Facturación de Almacén: Seguimiento Manual vs. Kit Automatizado
-
-Evita las tres trampas más comunes de la facturación de almacén mejorando tu flujo de trabajo operativo.
-
-| Área del Flujo de Facturación | Hoja de Cálculo Manual Tradicional | Kit de Facturación Automatizado (Este Repo) |
+| Área del flujo de facturación logística | Seguimiento manual tradicional en hoja de cálculo | Herramienta automatizada de facturación 3PL (este repositorio) |
 | :--- | :--- | :--- |
-| **Actualizaciones de Tarifas y Lógica** | **Reconstruir la Lógica Cada Ciclo:** Las fórmulas deben copiarse, pegarse y actualizarse manualmente en múltiples pestañas cada mes. | **Controles de Parámetros Centralizados:** Cambia las tarifas de almacenamiento o los cargos de transporte una vez en la capa de Configuración; todas las facturas históricas y futuras se actualizan automáticamente. |
-| **Cálculos de Almacenamiento de Palés** | **Conteo Plano de Unidades:** Trata cada palé como una simple unidad 1:1, perdiendo ingresos de los acuerdos de espacio de almacenamiento por tramos. | **Tramos de Facturación Configurables:** Aplica automáticamente el redondeo por tramos (p. ej., cobrar por un bloque de 10 palés) según los contratos de los clientes. |
-| **Diagnóstico de Errores de Factura** | **Solución de Problemas a Ciegas:** Una factura en blanco puede significar un VLOOKUP roto, un cliente faltante o cero actividad mensual. | **Estado Explícito de Salud de la Factura:** Los indicadores de diagnóstico declaran explícitamente si faltan datos, si no coinciden o si simplemente no hay actividad en el periodo. |
+| **Actualizaciones de tarifas y precios de clientes** | **Reconstruir la lógica en cada ciclo:** Las fórmulas de costes de almacenamiento y tarifas de flete deben copiarse, pegarse y auditarse manualmente en varias pestañas. | **Controles centralizados de parámetros:** Cambia las tarifas de almacenamiento o las tasas de pallet una sola vez en la capa de Configuración; todas las facturas logísticas históricas y futuras se actualizan automáticamente. |
+| **Cálculos de espacio de almacenamiento de pallets** | **Conteo plano de unidades:** Trata cada pallet como una unidad simple 1:1, perdiendo ingresos contractuales de acuerdos de espacio de almacenamiento por niveles. | **Niveles de facturación configurables:** Aplica automáticamente el redondeo por niveles (p. ej., cobro mínimo de bloque de 10 pallets) según los contratos SLA individuales. |
+| **Diagnóstico de errores de facturas de fin de mes** | **Solución de problemas a ciegas:** Una factura en blanco podría significar un VLOOKUP roto, un ID de cliente faltante o simplemente cero actividad de almacén. | **Estado de salud de factura explícito:** El dashboard de diagnóstico marca explícitamente si los datos de la cadena de suministro faltan, no coinciden o están inactivos. |
 
 ---
 
-## Tutorial de Inicio Rápido: Flujo de Facturación en 4 Pasos
+## Cómo automatizar tu facturación 3PL en 4 pasos (tutorial de inicio rápido)
 
-Deja de copiar y pegar fórmulas. Sigue esta secuencia operativa para establecer un ciclo de facturación repetible:
+Deja de copiar y pegar fórmulas frágiles. Sigue esta secuencia operativa para establecer un ciclo de facturación de fulfillment fiable y repetible:
 
-### Paso 1: Configura tus Tarifas de Almacén
-Abre la pestaña **Configuración del Sistema y Supuestos** para definir tus parámetros logísticos centrales:
-* Establece tu fecha ancla del ciclo (Quincenal o Mensual).
-* Define las tarifas diarias de almacenamiento, las tarifas horarias de manipulación y las tarifas de activación de transporte.
-* Establece las horas mínimas facturables de trabajo y los tramos de facturación de palés.
+### Paso 1: Configura tus tarifas de almacén (configuración de precios)
+Abre la pestaña **Configuración del sistema y supuestos** para definir tus parámetros logísticos centrales:
+- Establece tu fecha ancla del ciclo (p. ej., facturación quincenal o mensual).
+- Define las tarifas diarias de almacenamiento, las tarifas por hora de picking y embalaje y las tarifas de activación de transporte de flete.
+- Establece las horas mínimas de trabajo de almacén facturables y los niveles de facturación de espacio de pallets.
 
-### Paso 2: Registra las Operaciones Diarias del Almacén
-Introduce la actividad diaria en el **Motor de Operaciones y Facturación de Almacén**:
-* Pega las fechas de recepción, las fechas de despacho, los conteos físicos de palés y las horas reales de manipulación.
-* El sistema señala automáticamente los datos faltantes y calcula en tiempo real la duración prorrateada del almacenamiento y los totales de manipulación.
+### Paso 2: Registra las operaciones diarias del almacén (entrada de datos)
+Introduce tu actividad diaria de fulfillment en el **Motor de operaciones de almacén y facturación**:
+- Pega las fechas de recepción de entradas, las fechas de despacho, los recuentos físicos de pallets y las horas reales de trabajo de manipulación.
+- *Verificación de función:* El sistema marcará automáticamente los datos faltantes y calculará la duración de almacenamiento prorrateada y los totales de manipulación en tiempo real.
 
-### Paso 3: Audita los Resúmenes de Facturación Quincenal
-Cambia al panel de **Resumen de Facturación Quincenal**:
-* Revisa los totales agregados de almacenamiento, manipulación y transporte agrupados por cuenta de cliente.
-* Verifica las comprobaciones de Salud de Datos para asegurar que ninguna variable operativa faltante esté distorsionando los ingresos.
+### Paso 3: Audita los resúmenes de facturación quincenal (conciliación)
+<img width="1920" height="790" alt="image" src="https://github.com/user-attachments/assets/3bb40b05-5f3c-4e7d-8dd6-7be3fbee401c" />
 
-### Paso 4: Genera Estados de Cuenta de Clientes y Protege tus Datos
-Selecciona un cliente concreto y un periodo de facturación para generar un **Estado de Facturación de Una Sola Página** limpio y exportable.
+Cambia al dashboard **Resumen de facturación quincenal** antes de fin de mes:
+- Revisa los totales agregados de almacenamiento de inventario, manipulación de materiales y transporte de flete agrupados por cuenta de cliente.
+- Verifica las *Comprobaciones de salud de datos* para asegurarte de que ninguna variable operativa faltante (como una fecha de despacho vacía) esté distorsionando tus ingresos logísticos.
 
-👉 **¿Listo para estandarizar tu facturación de almacén?**  
-Prueba tus tarifas en la versión gratuita del navegador y luego [Descarga la Plantilla Excel Reutilizable de Facturación de Almacén](https://www.theseusworkshop.com/l/liwdi?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=warehouse-billing-control) para desplegar un marco de facturación seguro, sin conexión y de acceso de por vida para tu negocio.
+### Paso 4: Genera estados de cuenta para clientes y asegura tu activo reutilizable
+Selecciona un cliente 3PL específico y un periodo de facturación para generar al instante un **Estado de Cuenta de Una Página** limpio y exportable.
 
----
-
-## Cómo Funciona
-
-### 01 — Configura tus Reglas de Facturación
-
-La capa de configuración centraliza los supuestos utilizados en todo el libro de trabajo.
-
-Los parámetros admitidos incluyen:
-
-* Tarifa Diaria de Almacenamiento
-* Tramo de Facturación de Almacenamiento
-* Tarifa Horaria de Trabajo
-* Horas Mínimas de Trabajo
-* Tarifa Base de Transporte
-* Tarifa Adicional por Palé
-* Días del Ciclo de Facturación
-* Fecha Base del Ciclo
-
-Esto crea un único lugar para mantener las reglas comerciales en lugar de incrustar tarifas en múltiples hojas de cálculo.
+👉 **¿Listo para estandarizar tu facturación de almacén de forma permanente?**  
+Prueba tus modelos de precios en la calculadora web gratuita de arriba para ver la lógica en acción. Una vez satisfecho con el flujo de trabajo, **[descarga aquí la plantilla Excel reutilizable de facturación de almacén](https://www.theseusworkshop.com/l/liwdi?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=warehouse-billing-control)** para desplegar un marco de facturación seguro, sin conexión y accesible de por vida para tus operaciones logísticas diarias.
 
 ---
 
-### 02 — Registra la Actividad del Almacén Una Sola Vez
+## La lógica de negocio y la metodología: cómo resolvemos la facturación 3PL
 
-La hoja operativa es la **Única Fuente de Verdad** del libro de trabajo.
+Esta herramienta se basa en principios probados de gestión de la cadena de suministro. No es solo una colección de fórmulas, sino una metodología estructurada para resolver problemas reales de logística comercial:
 
-Cada registro captura:
+1. **Integración del costeo basado en actividades (ABC):** En lugar de cuotas mensuales planas, esta plantilla utiliza principios ABC. Vincula la mano de obra directa (horas de manipulación) y la huella física (días de almacenamiento en pallets) directamente al cliente específico que utiliza esos recursos, garantizando una recuperación precisa de costes y protección del margen.
+2. **Desacoplar las operaciones de la facturación:** En muchos almacenes, los registros operativos y las facturas financieras se mezclan, lo que corrompe los datos. Esta plantilla introduce un desacoplamiento estructural: el personal del almacén solo introduce hechos operativos brutos (fechas, pallets, horas), mientras que el motor automatizado se encarga estrictamente de la traducción financiera según tarifas predefinidas.
+3. **Estandarizar lo impredecible:** La logística es inherentemente caótica: los clientes envían pallets parciales, los envíos se retrasan y los días de almacenamiento fluctúan. Al implementar la lógica de «Facturación por niveles» y «Umbrales mínimos» dentro de la hoja de cálculo, la herramienta estandariza matemáticamente estas variables físicas impredecibles en unidades financieras facturables y previsibles.
 
-* Código de Seguimiento
-* Nombre del Cliente
-* Descripción del Artículo
-* Fecha de Recepción
-* Fecha de Despacho
-* Cantidad de Palés
-* Horas de Trabajo
-* Indicador de Transporte
-
-El libro de trabajo deriva entonces:
-
-* Días de Almacenamiento
-* Espacios de Palé Facturados
-* Costo de Almacenamiento
-* Horas de Trabajo Facturadas
-* Costo de Manipulación
-* Costo de Transporte
-* Cargos Totales
-* Periodo de Facturación
-* Salud de Datos
-
-La decisión de diseño importante es que los hechos operativos se introducen una sola vez. Las vistas de facturación posteriores hacen referencia a esta fuente en lugar de exigir una entrada duplicada.
+Una hoja de cálculo se convierte en un verdadero activo de negocio cuando hace más que almacenar información: debe hacer que un proceso comercial subyacente sea más fácil de repetir, auditar y escalar.
 
 ---
 
-### 03 — Deja que el Libro Aplique las Reglas de Cobro
 
-La capa de cálculo gestiona la lógica de facturación definida de forma coherente.
-
-Por ejemplo:
-
-* Los días de almacenamiento continúan dinámicamente para el inventario que sigue en almacén.
-* El inventario despachado deja de acumular días de almacenamiento una vez introducida la fecha de despacho.
-* Las cantidades de palés se convierten en espacios de palé facturables según el tramo configurado.
-* Las horas de trabajo positivas quedan sujetas al umbral mínimo facturable configurado.
-* Los cargos de transporte solo se aplican cuando el transporte está marcado como activo.
-* Los cargos totales combinan los componentes de almacenamiento, manipulación y transporte.
-
-Estos cálculos se basan en las reglas de negocio suministradas, no en supuestos genéricos de almacén.
-
----
-
-### 04 — Revisa la Facturación por Cliente + Periodo Quincenal
-
-La capa de resumen identifica automáticamente combinaciones únicas de:
-
-**Periodo de Facturación + Nombre del Cliente**
-
-Para cada combinación, proporciona:
-
-* Recuento Total de Tareas
-* Ingresos por Almacenamiento
-* Ingresos por Manipulación
-* Ingresos por Transporte
-* Ingresos Totales
-
-Esto ofrece a finanzas o a la dirección una vista compacta de lo que debe facturarse a cada cliente durante cada ciclo de facturación.
-
----
-
-### 05 — Genera el Estado de Cuenta del Cliente
-
-Selecciona:
-
-**Cliente → Periodo de Facturación**
-
-La vista de facturación de una sola página extrae entonces la información de facturación correspondiente y las líneas operativas.
-
-Antes de imprimir, **Salud de la Factura** comprueba si la combinación seleccionada es válida.
-
-El estado está diseñado para **impresión horizontal en una sola página o exportación a PDF**, lo que lo hace adecuado para enviarlo a los clientes como documento de facturación.
-
----
-
-## Flujo de Trabajo Central
+## Flujo de trabajo central
 
 ```text
 SYSTEM SETTINGS
@@ -214,119 +130,119 @@ Print / PDF
 
 El resultado no es un sistema general de gestión de almacenes.
 
-Es un **flujo de trabajo de control de facturación enfocado**, construido en torno a un único problema de negocio recurrente.
+Es un **flujo de trabajo de control de facturación enfocado** construido en torno a un problema de negocio recurrente.
 
 ---
 
-## Principios de Diseño
+## Principios de diseño
 
-### Única Fuente de Verdad
+### Única fuente de verdad
 
 Los hechos operativos se introducen en un solo lugar. Las vistas de resumen y facturación derivan su información de esa fuente.
 
 Esto reduce la entrada duplicada y facilita rastrear un total de facturación hasta el registro operativo subyacente.
 
-### Parámetros en Un Solo Lugar
+### Parámetros en un solo lugar
 
-Los supuestos comerciales están centralizados en lugar de dispersarse por las áreas de cálculo.
+Los supuestos comerciales se centralizan en lugar de dispersarse por las áreas de cálculo.
 
-Esto hace que los cambios de tarifas sean más fáciles de gestionar y reduce el riesgo de actualizar un cálculo olvidando otro.
+Esto facilita gestionar los cambios de tarifas y reduce el riesgo de actualizar un cálculo y olvidar otro.
 
-### Cálculo + Diagnóstico
+### Cálculo + diagnóstico
 
-El libro de trabajo separa **"¿Cuál es el cargo?"** de **"¿Puedo confiar en la entrada?"**
+El libro de trabajo separa **«¿Cuál es el cargo?»** de **«¿Puedo confiar en la entrada?»**
 
-Salud de Datos aborda los problemas a nivel de origen.
+La salud de datos aborda problemas a nivel de fuente.
 
-Salud de la Factura aborda los problemas de salida de facturación.
+La salud de factura aborda problemas de salida de facturación.
 
-Este enfoque de dos etapas es especialmente útil cuando distintas personas utilizan el libro para operaciones, finanzas y facturación a clientes.
+Este enfoque de dos etapas es particularmente útil cuando el libro lo usan personas diferentes para operaciones, finanzas y facturación de clientes.
 
-### Reutilizar en Lugar de Reconstruir
+### Reutilizar en lugar de reconstruir
 
-Una vez configurado el libro de trabajo, el proceso recurrente es principalmente:
+Una vez configurado el libro, el proceso recurrente es principalmente:
 
 **introducir → revisar → resumir → facturar**
 
-El mismo marco puede reutilizarse en sucesivos ciclos de facturación en lugar de reconstruir una nueva hoja de cálculo cada vez.
+El mismo marco puede reutilizarse a lo largo de los ciclos de facturación en lugar de reconstruir una nueva hoja de cálculo cada vez.
 
 ---
 
 ## Requisitos
 
-Este libro de trabajo se apoya en la funcionalidad moderna de matrices dinámicas de Excel.
+Este libro de trabajo depende de la funcionalidad moderna de matrices dinámicas de Excel.
 
 **Requerido:**
 
 * Microsoft 365, o
 * Excel 2021 o posterior
-* Funciones de matrices dinámicas como `MAP`, `LAMBDA`, `UNIQUE` y `FILTER`
+* Funciones de matrices dinámicas incluyendo `MAP`, `LAMBDA`, `UNIQUE` y `FILTER`
 
 **No diseñado para:**
 
 * Excel 2016
 * Excel 2013
 * versiones anteriores de Excel sin el motor de matrices dinámicas requerido
-* software de hojas de cálculo de terceros sin soporte equivalente de funciones
+* software de hojas de cálculo de terceros sin soporte de funciones equivalente
 
 La implementación tampoco **requiere VBA**.
 
 ---
 
-## Ciclo Operativo Típico
+## Ciclo operativo típico
 
-### Configuración Inicial
+### Configuración inicial
 
 1. Abre el libro de trabajo.
 2. Revisa la configuración del sistema.
 3. Introduce los supuestos aplicables de almacenamiento, mano de obra, transporte y ciclo de facturación.
 
-### Operaciones Diarias
+### Operaciones diarias
 
 1. Añade nueva actividad de almacén al registro operativo.
 2. Introduce la información de recepción y despacho.
-3. Registra la cantidad de palés, las horas de trabajo y el estado del transporte.
-4. Revisa **Salud de Datos** en busca de excepciones.
+3. Registra la cantidad de pallets, las horas de trabajo y el estado del transporte.
+4. Revisa la **salud de datos** en busca de excepciones.
 
-### Facturación Quincenal
+### Facturación quincenal
 
 1. Abre el resumen de facturación.
 2. Revisa los totales por cliente-periodo.
-3. Selecciona el cliente en el estado de facturación.
+3. Selecciona el cliente en el estado de cuenta.
 4. Selecciona el periodo de facturación correspondiente.
-5. Confirma que **Salud de la Factura** muestra un estado de facturación válido.
-6. Revisa las líneas de detalle.
-7. Imprime o exporta el estado como PDF.
+5. Confirma que la **salud de la factura** muestra un estado de facturación válido.
+6. Revisa las partidas.
+7. Imprime o exporta el estado de cuenta como PDF.
 
-La experiencia de usuario prevista es sencilla:
+La experiencia de usuario prevista es simple:
 
-> **Define las reglas una vez. Registra el trabajo. Revisa el resultado. Factura al cliente.**
+> **Configura las reglas una vez. Registra el trabajo. Revisa el resultado. Factura al cliente.**
 
 ---
 
 ## Mantenimiento
 
-El libro de trabajo está diseñado para un uso recurrente de bajo mantenimiento.
+El libro está diseñado para un uso recurrente de bajo mantenimiento.
 
-El funcionamiento normal debería implicar:
+La operación normal debería incluir:
 
 * actualizar la actividad del almacén
-* mantener al día las fechas de despacho
-* revisar las advertencias de Salud de Datos
+* mantener las fechas de despacho al día
+* revisar las advertencias de salud de datos
 * cambiar los supuestos comerciales solo cuando cambien las reglas de facturación subyacentes
-* revisar los totales por cliente-periodo antes de emitir los estados
+* revisar los totales por cliente-periodo antes de emitir estados de cuenta
 
 Las áreas de cálculo no deben sobrescribirse manualmente.
 
-En particular, el área de fórmulas de matriz dinámica de la hoja operativa debe permanecer despejada para que los cálculos puedan derramarse automáticamente en los nuevos registros.
+En particular, el área de fórmulas de matrices dinámicas en la hoja operativa debe permanecer despejada para que los cálculos puedan desbordarse automáticamente hacia los nuevos registros.
 
 ---
 
 ## Limitaciones
 
-Este kit está enfocado intencionadamente.
+Esta herramienta es intencionalmente enfocada.
 
-**No** está pensado para sustituir:
+**No** está destinada a reemplazar:
 
 * un sistema completo de gestión de almacenes
 * software de gestión de inventario
@@ -335,23 +251,9 @@ Este kit está enfocado intencionadamente.
 * sistemas de cobro de pagos
 * un ERP general
 
-Calcula y organiza los cargos según las reglas de negocio configuradas. No determina por sí mismo si esas reglas comerciales son apropiadas para un contrato concreto.
+Calcula y organiza los cargos según las reglas de negocio configuradas. No determina de forma independiente si esas reglas comerciales son apropiadas para un contrato particular.
 
-Por rendimiento, la implementación recomienda mantener un libro de trabajo por debajo de aproximadamente **100,000 filas operativas** y archivar los datos más antiguos anualmente si es necesario.
-
----
-
-## Sobre el Creador
-
-Este kit se construye a partir de una premisa simple:
-
-**Los problemas operativos recurrentes merecen flujos de trabajo reutilizables.**
-
-Una hoja de cálculo se vuelve mucho más útil cuando hace más que almacenar información. Debería facilitar que el proceso de negocio subyacente se repita, se revise y se explique.
-
-El objetivo aquí no es convertir Excel en software empresarial.
-
-Es empaquetar un flujo de trabajo operativo específico en una herramienta práctica que pueda abrirse, entenderse y reutilizarse sin un proyecto de implementación de software.
+Por rendimiento, la implementación recomienda mantener el libro por debajo de aproximadamente **100.000 filas operativas** y archivar los datos antiguos anualmente si es necesario.
 
 ---
 
@@ -359,11 +261,11 @@ Es empaquetar un flujo de trabajo operativo específico en una herramienta prác
 
 Este proyecto se publica bajo la **Licencia Apache 2.0**.
 
-Consulta el archivo `LICENSE` para el texto completo de la licencia.
+Consulta el archivo `LICENSE` para ver el texto completo de la licencia.
 
 ---
 
-## Nota Final
+## Nota final
 
 La facturación de almacén no necesita convertirse en un gran proyecto de software solo porque intervengan varias reglas de cobro.
 
@@ -371,7 +273,6 @@ Si tu proceso es fundamentalmente:
 
 **actividad de almacén → cargos de almacenamiento + manipulación + transporte → facturación quincenal al cliente**
 
-entonces un flujo de trabajo enfocado en Excel puede ser suficiente.
+entonces un flujo de trabajo de Excel enfocado puede ser suficiente.
 
-Este kit está diseñado para mantener ese flujo visible, repetible y auditable, dejando el negocio en el entorno familiar de Excel.
-
+Esta herramienta está diseñada para mantener ese flujo de trabajo visible, repetible y auditable, dejando el negocio en el entorno familiar de Excel.
